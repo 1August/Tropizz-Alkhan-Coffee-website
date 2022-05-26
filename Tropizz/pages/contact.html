@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alkhan | Contact</title>
+    <link rel="shortcut icon" href="../img/coffeeIcon.png"/>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/static.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <!--  JS  -->
+    <!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPjYpXybcgGt7dXi0sMK-QXLOXyp11xLE&callback=initMap" async></script>-->
+    <script src="../js/googleMap.js" async type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="../js/firebase.js" defer type="module"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+<nav id="nav">
+    <div class="container">
+        <div class="logo">
+            <span id="brand">Alkhan</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="coffees.html">Продукция</a></li>
+                <li><a href="./contact.html" class="active">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                <li><a href="#" class="signOut">Выйти</a></li>
+            </ul>
+            <div id="hiddenMenu">
+                <i data-feather="menu"></i>
+                <ul class="hide">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="coffees.html">Продукция</a></li>
+                    <li><a href="./contact.html" class="active">Контакты</a></li>
+                    <li><a href="./aboutUs.html">О нас</a></li>
+                    <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                    <li><a href="#" class="signOut">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section id="mapSection">
+        <div class="container">
+            <h1>Наши кофейни</h1>
+            <h3>Можете посетить одну из кофеен по этим местоположениям!</h3>
+            <div class="mapDetails">
+                <div class="addresses">
+                    <div class="address">
+                        <h2>Моя локация</h2>
+                        <h4>Узнай свою локацию.</h4>
+                        <p>
+                            Нужно разрешить свою геолокацию.
+                        </p>
+                    </div>
+                    <div class="address clickedLocation">
+                        <h2>Локация #1</h2>
+                        <h4>Самое популярное и любимое место.</h4>
+                        <p>
+                            Больше 95% посетителей довольны.
+                        </p>
+                    </div>
+                    <div class="address">
+                        <h2>Локация #2</h2>
+                        <h4>Хочешь отдохнуть?</h4>
+                        <p>
+                            Лучший выбор чтобы взять перерыв.
+                        </p>
+                    </div>
+                </div>
+                <div class="googleMap">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <img class="breakLine" src="../img/breakLine.png" alt="break line">
+    </div>
+    <section id="contactUs">
+        <div class="container">
+            <h1>Отзывы</h1>
+            <h3>Нам важен каждый отзыв от наших посетителей</h3>
+            <form>
+                <label for="userName">Your name</label>
+                <input id="userName" type="text" placeholder="Имя">
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="пример@example.com">
+                <textarea name="senderMessage" id="senderMessage" cols="30" rows="10"
+                          placeholder="Напишите сюда..."></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+</main>
+
+<div class="wave"></div>
+<div id="goTopBtn"><i data-feather="arrow-up"></i></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="coffees.html">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="./aboutUs.html">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="mini_contacts">
+            <a href="tel:+77782500648">+7 (778) 250 06 48</a>
+            <a href="mailto:alxanm02@gmail.com&cc=alxanm02@gmail.com">alxanm02@gmail.com</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

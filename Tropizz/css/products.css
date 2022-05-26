@@ -1,0 +1,159 @@
+/*Products*/
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.productLinksList {
+    width: 25%;
+}
+
+.productLinksList ul {
+    margin: 0;
+    padding: 0;
+    list-style: inside url("../img/coffee.svg");
+
+    position: sticky;
+    top: 5rem;
+}
+
+.productLinksList ul li:first-of-type {
+    list-style: none;
+}
+
+.productLinksList li {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.productLinksList li + li {
+    border-top: 1px solid rgba(var(--second-color), .15);
+}
+
+
+.productsList {
+    width: 75%;
+}
+
+.productsList h2 {
+    border-bottom: 1px solid rgba(var(--second-color), .1);
+}
+
+.productsList p {
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cards + h2 {
+    margin-top: 4rem;
+}
+
+.cards::after {
+    content: '';
+    width: calc((100% - 4rem) / 3);
+}
+
+.card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: calc((100% - 4rem) / 3);
+    /*flex-grow: 1;*/
+    flex-wrap: wrap;
+
+    box-shadow: 1rem 1rem 5rem rgba(var(--second-color), .125);
+    border: 1px solid rgba(var(--second-color), .15);
+    border-radius: 15px;
+}
+
+
+.cardImg img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+
+    border-radius: 15px 15px 0 0;
+
+    aspect-ratio: 4 / 3;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding: 1rem;
+}
+
+.cardOrderNumber {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    padding: .5rem 0 1rem;
+}
+
+.cardOrderNumber input {
+    outline: none;
+    /*border: none;*/
+    border: 1px solid rgba(var(--main-color), .5);
+    border-radius: 10px;
+
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+}
+
+.cardOrderNumber button {
+    aspect-ratio: 1;
+
+    border: 1px solid rgba(var(--second-color), .15);
+    border-radius: 100%;
+    padding: .3rem .6rem;
+}
+
+.card a {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+
+    padding: .25rem 0;
+}
+
+
+@media (max-width: 1440px) {
+    .card {
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .container {
+        flex-direction: column;
+    }
+
+    .productLinksList {
+        width: 100%;
+    }
+
+    .productsList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        flex-basis: 100%;
+    }
+}

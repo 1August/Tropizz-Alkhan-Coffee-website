@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alkhan | Coffee</title>
+    <link rel="shortcut icon" href="../img/coffeeIcon.png"/>
+
+    <!--  JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="./js/firebase.js" defer type="module"></script>
+    <script src="./js/main.js" defer></script>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/static.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<nav id="nav">
+    <div class="container">
+        <div class="logo">
+            <span id="brand">Alkhan</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="./index.html" class="active">Главная</a></li>
+                <li><a href="./pages/popular.html">Продукция</a></li>
+                <li><a href="./pages/contact.html">Контакты</a></li>
+                <li><a href="./pages/aboutUs.html">О нас</a></li>
+                <li><a href="./pages/registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                <li><a href="#" class="signOut">Выйти</a></li>
+            </ul>
+            <div id="hiddenMenu">
+                <i data-feather="menu"></i>
+                <ul class="hide">
+                    <li><a href="./index.html" class="active">Главная</a></li>
+                    <li><a href="./pages/popular.html">Продукция</a></li>
+                    <li><a href="./pages/contact.html">Контакты</a></li>
+                    <li><a href="./pages/aboutUs.html">О нас</a></li>
+                    <li><a href="./pages/registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                    <li><a href="#" class="signOut">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<header id="offer">
+    <div class="container-fluid">
+        <div class="offer_img">
+            <img src="./img/coffeeBanner.jpg" alt="Coffee banner">
+        </div>
+        <div class="offer_text">
+            <h1>
+                Добро пожаловать!
+            </h1>
+            <h3>
+                Доступно - Качественно - Вкусно
+            </h3>
+            <p>
+                Мы рады приветствовать вас в нашей сети кофейн-кондитеских “Alkhan”. Воспользуйтесь нашим онлайн
+                сервисом для заказа свежеприготовленной еды и ароматного кофе, это легко и просто, доступно на всех
+                мобильных устройствах. Всегда ждем вас в наших кофейнях.
+            </p>
+            <a href="pages/popular.html">Посмотреть <i data-feather="arrow-right"></i></a>
+        </div>
+    </div>
+</header>
+<main id="main">
+    <section id="mainContent">
+        <div class="container">
+            <h1>
+                "Кофе - напиток очень личный, его, как и коньяк, нельзя пить кружками"
+            </h1>
+            <h3>
+                Уинстон Черчилль
+            </h3>
+            <img class="coffeeBeans" src="./img/coffeBeans.jpg" alt="coffee beans">
+            <p>
+                На сегодняшний день компания Alkhan насчитывает 25 точки в Астане, 18 из них работают в формате
+                кофеен-кондитерских.
+            </p>
+            <p>
+                Флагманский объект Alkhan занимает 1600 квадратных метров и расположен в самом центре Астаны. Сеть
+                Alkhan представлена уютными кофейнями, кондитерскими магазинчиками и кофейнями-кондитерскими с
+                ограниченным ассортиментом.
+            </p>
+            <p>
+                Линейка продукции Alkhan включает 60 наименований, в том числе более 15 кондитерских изделий. С 2021 по
+                2022 год штат Alkhan вырос с 2 до 9 человек.
+            </p>
+            <img class="breakLine" src="./img/breakLine.png" alt="break line">
+        </div>
+    </section>
+    <section class="cardsSection">
+        <div class="container">
+            <h1>Посмотреть!</h1>
+            <h3>Невероятно вкусные фирменные напитки Alkhan прекрасно охлаждают и дарят удовольствие</h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="./img/coffee1.png" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h3>Вкусные</h3>
+                        <h5></h5>
+                        <p>Разного вкуса Латте</p>
+                        <a href="pages/coffees.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="./img/coffee2.png" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h3>Охлажденные</h3>
+                        <h5></h5>
+                        <p>Холодные напитки Мокко</p>
+                        <a href="pages/coffees.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="./img/coffee3.png" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h3>Фирменные</h3>
+                        <h5></h5>
+                        <p>И много остальных различных вкусов кофе</p>
+                        <a href="pages/coffees.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="container">
+            <h1>Еco Friendly Lifestyle</h1>
+            <h3>Все больше и больше людей начинают задумываться о сохранении природы и окружающей среды. Изменить
+                ситуацию на планете в наших силах!</h3>
+            <div class="articles">
+                <div class="article">
+                    <div class="articleText">
+                        <h1>Скидка на свою посуду</h1>
+                        <p>
+                            Если вы спешите и не можете выпить кофе внутри кофейни, вы можете принести с собой свою
+                            многоразовую кружку или термос. Мы подарим вам скидку в 10% на любой кофейный напиток в вашу
+                            посуду.
+                        </p>
+                    </div>
+                    <div class="articleImg">
+                        <img src="./img/article1.jpg" alt="article image">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="articleText">
+                        <h1>Биоразлагаемая посуда</h1>
+                        <p>
+                            Мы используем бумажные крышки и стаканы от наших друзей, ПОЛИКАП. Материал изготовления:
+                            целлюлоза из сахарного тростника. Срок разложения данных крышек: около 90 дней, в то время
+                            как пластик разлагается от 30 до 1000 лет, в зависимости от категории.
+                        </p>
+                    </div>
+                    <div class="articleImg">
+                        <img src="./img/article2.jpg" alt="article image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="wave"></div>
+<div id="goTopBtn"><i data-feather="arrow-up"></i></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_links">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="pages/coffees.html">Продукция</a></li>
+                <li><a href="./pages/contact.html">Контакты</a></li>
+                <li><a href="./pages/aboutUs.html">О нас</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="./pages/aboutUs.html">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="mini_contacts">
+            <a href="tel:+77782500648">+7 (778) 250 06 48</a>
+            <a href="mailto:alxanm02@gmail.com&cc=alxanm02@gmail.com">alxanm02@gmail.com</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

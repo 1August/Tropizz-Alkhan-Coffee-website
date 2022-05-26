@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alkhan | Account</title>
+    <link rel="shortcut icon" href="../img/coffeeIcon.png"/>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/static.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <!--  JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="../js/firebase.js" defer type="module"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+<nav id="nav">
+    <div class="container">
+        <div class="logo">
+            <span id="brand">Alkhan</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./popular.html">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                <li><a href="#" class="signOut">Выйти</a></li>
+            </ul>
+            <div id="hiddenMenu">
+                <i data-feather="menu"></i>
+                <ul class="hide">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./popular.html">Продукция</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                    <li><a href="./aboutUs.html">О нас</a></li>
+                    <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                    <li><a href="#" class="signOut">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="accountInfo">
+            <div class="accountImg">
+                <img id="userAvatar" src="../img/noAvatar.png" alt="Account image">
+                <label for="uploadImg">Upload photo</label>
+                <input type="file" id="uploadImg" accept="image/jpeg, image/jpg, image/png">
+            </div>
+            <form>
+                <p class="userNameLabel">
+                    <input type="text" id="userName" placeholder="Your name">
+                    <i data-feather="edit-3"></i>
+                </p>
+                <input type="email" id="email" readonly placeholder="Email">
+            </form>
+        </div>
+        <div class="userAddition">
+            <h1>Ваша корзина</h1>
+            <div class="firstOrderTime">
+                <p>Примерное время: 15 минут</p>
+                <input type="time"/>
+            </div>
+            <div id="cart"></div>
+            <button class="orderProducts">Сделать заказ</button>
+        </div>
+    </div>
+</main>
+
+<div class="wave"></div>
+<div id="goTopBtn"><i data-feather="arrow-up"></i></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="coffees.html">Products</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="./aboutUs.html">Help</a></li>
+            </ul>
+        </div>
+        <div class="mini_contacts">
+            <a href="tel:+77001234567">+7 (700) 123 45 67</a>
+            <a href="mailto:tropizz@example.com&cc=tropizz@example.com">tropizz@example.com</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alkhan | Coffee</title>
+    <link rel="shortcut icon" href="../img/coffeeIcon.png"/>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/static.css">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <!--  JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="../js/firebase.js" defer type="module"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+<nav id="nav">
+    <div class="container">
+        <div class="logo">
+            <span id="brand">Alkhan</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./popular.html" class="active">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                <li><a href="#" class="signOut">Выйти</a></li>
+            </ul>
+            <div id="hiddenMenu">
+                <i data-feather="menu"></i>
+                <ul class="hide">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./popular.html" class="active">Продукция</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                    <li><a href="./aboutUs.html">О нас</a></li>
+                    <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                    <li><a href="#" class="signOut">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<main id="main">
+    <div class="container">
+        <div class="productLinksList">
+            <ul>
+                <li><h1>Категории</h1></li>
+                <li><a href="./popular.html">Популярные</a></li>
+                <li><a href="./coffees.html" class="active">Кофе</a></li>
+                <li><a href="./cakes.html">Выпечка</a></li>
+                <li><a href="#">Сэндвичи - Скоро</a></li>
+                <li><a href="#">Салаты - Скоро</a></li>
+            </ul>
+        </div>
+        <div class="productsList">
+            <h1>Кофе</h1>
+            <h2>Латте</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/kakao&orangeLatte.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Какао & Апельсин Овсяный Латте</h2>
+                        <h5></h5>
+                        <p>Яркий, сочный, но в то же время мягкий и шелковистый латте на овсяной основе, с нотками
+                            апельсина и какао, на обжарке</p>
+                        <div class="cardOrderNumber cacaoAndOrangeLatte">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/cacaoAndOrangeLatte.html">Узнать больше <i
+                                data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/latte.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Латте</h2>
+                        <h5></h5>
+                        <p>Напиток на основе эспрессо и молока с небольшим количеством молочной пены</p>
+                        <div class="cardOrderNumber latte">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/latte.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/coldLatte.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Латте охлаждённый</h2>
+                        <h5></h5>
+                        <p>Охлажденный напиток на основе эспрессо и молока</p>
+                        <div class="cardOrderNumber coldLatte">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/coldLatte.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Капучино</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/cappucino.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Капучино</h2>
+                        <h5></h5>
+                        <p>Напиток на основе эспрессо и молока с большим количеством молочной пены.</p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Американо</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/americano.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Американо</h2>
+                        <h5></h5>
+                        <p>Чёрный кофе на основе эспрессо с добавлением горячей воды</p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/coldAmericano.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Американо охлаждённый</h2>
+                        <h5></h5>
+                        <p>Охлаждённый чёрный кофе на основе эспрессо</p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Флэт Уайт</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/flatWhite.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Флэт Уайт</h2>
+                        <h5></h5>
+                        <p>Самый насыщенный по вкусу молочный напиток на основе эспрессо.</p>
+                        <div class="cardOrderNumber flatWhite">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/flatWhite.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Эспрессо</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/espresso.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Эспрессо</h2>
+                        <h5></h5>
+                        <p></p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/espressoMakkiato.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Эспрессо Маккиато</h2>
+                        <h5></h5>
+                        <p></p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/espressoConPanna.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Эспрессо Кон Панна</h2>
+                        <h5></h5>
+                        <p></p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Мокка</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/mokka.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Мокка</h2>
+                        <h5></h5>
+                        <p>Охлажденный напиток на основе эспрессо и молока с добавлением шоколадного соуса, сверху украшается взбитыми сливками.</p>
+                        <div class="cardOrderNumber mokka">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/mokka.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/coldMokka.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Мокка охлажденный</h2>
+                        <h5></h5>
+                        <p>Охлажденный напиток на основе эспрессо и молока с добавлением шоколадного соуса, сверху украшается взбитыми сливками</p>
+                        <div class="cardOrderNumber coldMokka">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/coffee/coldMokka.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/mokkaWhiteChocolate.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Мокка Белый Шоколад</h2>
+                        <h5></h5>
+                        <p>Напиток на основе эспрессо и молока с добавлением  соуса белого шоколада</p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/coffee/coldMokkaWhiteChocolate.jpg" alt="Coffee">
+                    </div>
+                    <div class="cardText">
+                        <h2>Мокка Белый Шоколад охлаждённый</h2>
+                        <h5></h5>
+                        <p>Охлажденный напиток на основе эспрессо и молока с добавлением соуса белого шоколада, сверху украшается взбитыми сливками
+                        </p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="wave"></div>
+<div id="goTopBtn"><i data-feather="arrow-up"></i></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./coffees.html">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="./aboutUs.html">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="mini_contacts">
+            <a href="tel:+77782500648">+7 (778) 250 06 48</a>
+            <a href="mailto:alxanm02@gmail.com&cc=alxanm02@gmail.com">alxanm02@gmail.com</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

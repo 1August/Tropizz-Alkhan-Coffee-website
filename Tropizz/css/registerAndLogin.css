@@ -1,0 +1,187 @@
+body {
+    overflow: unset;
+}
+
+.errorMsg {
+    text-align: center;
+    color: red;
+}
+
+#goMain {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4vw;
+    height: 4vw;
+
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(var(--second-color), .3);
+    box-shadow: .5rem .5rem 15px rgba(var(--second-color), .15);
+    border-radius: 100%;
+}
+
+#goMain:hover {
+    box-shadow: inset 0 0 10px rgba(var(--second-color), .2), .5rem .5rem 15px rgba(var(--second-color), .15);
+}
+
+#goMain:active {
+    box-shadow: inset 0 0 10px rgba(var(--second-color), .5);
+}
+
+#goMain a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.centerContainer {
+    width: 80%;
+}
+
+label {
+    display: block;
+    padding: .5rem 0;
+}
+
+input + label {
+    margin-top: 1rem;
+}
+
+input + button {
+    margin-top: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: .7rem .5rem;
+    outline: none;
+
+    border: inset 2px rgba(var(--second-color), .5);
+    box-shadow: .3rem .3rem 10px rgba(var(--second-color), .15);
+}
+
+input:focus {
+    border: 2px solid rgba(var(--main-color), .8);
+}
+
+h1 {
+    font-family: var(--bebas), sans-serif;
+    letter-spacing: 8px;
+    text-align: center;
+
+    user-select: none;
+}
+
+a {
+
+}
+
+main .container > * {
+    position: fixed;
+    z-index: 1;
+}
+
+.login, .register {
+    inset: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.loginImg, .registerImg {
+    width: 50%;
+    height: 100%;
+    background: no-repeat center right / cover;
+}
+
+.loginForm, .registerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.loginForm form, .registerForm form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/*.loginForm button, .registerForm button{*/
+/*    */
+/*}*/
+
+.btnGroup {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+}
+
+/* Login */
+
+.loginImg {
+    box-shadow: .5rem 0 30px rgba(var(--second-color), .1);
+    background-image: url(../img/coffeeBanner.jpg);
+}
+
+
+/* Register */
+.register {
+    top: 100vh;
+
+    background-color: #fff;
+}
+
+.showForm {
+    top: 0;
+    transition: all .5s linear;
+}
+
+.hideForm {
+    bottom: 100vh;
+    transition: all .5s linear;
+}
+
+.registerImg {
+    box-shadow: -.5rem 0 30px rgba(var(--second-color), .1);
+    background-image: url(../img/coffeBeans.jpg);
+}
+
+@media screen and (max-width: 768px) {
+    .loginImg, .registerImg {
+        display: none;
+    }
+
+    .loginForm, .registerForm {
+        width: var(--container-width);
+        margin: 0 auto;
+    }
+
+    #goMain {
+        left: 10%;
+        top: 5%;
+        width: calc(4vw + 1.2rem);
+        height: calc(4vw + 1.2rem);
+    }
+}

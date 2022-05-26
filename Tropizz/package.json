@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@firebase/app": "^0.7.20",
+    "express": "^4.18.1",
+    "firebase": "^9.6.10",
+    "firebase-app": "^0.0.1"
+  },
+  "name": "tropizz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlkhanDown/Tropizz-coffee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlkhanDown/Tropizz-coffee/issues"
+  },
+  "homepage": "https://github.com/AlkhanDown/Tropizz-coffee#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.4",
+    "nodemailer": "^6.7.5"
+  }
+}

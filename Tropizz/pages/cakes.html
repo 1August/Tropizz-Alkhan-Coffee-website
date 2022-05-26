@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alkhan | Cakes</title>
+    <link rel="shortcut icon" href="../img/coffeeIcon.png"/>
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/static.css">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <!--  JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="../js/firebase.js" defer type="module"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+<nav id="nav">
+    <div class="container">
+        <div class="logo">
+            <span id="brand">Alkhan</span>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./popular.html" class="active">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                <li><a href="#" class="signOut">Выйти</a></li>
+            </ul>
+            <div id="hiddenMenu">
+                <i data-feather="menu"></i>
+                <ul class="hide">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./popular.html" class="active">Продукция</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                    <li><a href="./aboutUs.html">О нас</a></li>
+                    <li><a href="./registerAndLogin.html" class="authAndAccount">Аккаунт</a></li>
+                    <li><a href="#" class="signOut">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<main id="main">
+    <div class="container">
+        <div class="productLinksList">
+            <ul>
+                <li><h1>Категории</h1></li>
+                <li><a href="./popular.html">Популярные</a></li>
+                <li><a href="coffees.html">Кофе</a></li>
+                <li><a href="./cakes.html" class="active">Выпечка</a></li>
+                <li><a href="#">Сэндвичи - Скоро</a></li>
+                <li><a href="#">Салаты - Скоро</a></li>
+            </ul>
+        </div>
+        <div class="productsList">
+            <h1>Выпечка</h1>
+            <h2>Чизкейки</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/cheesecakeNY.png" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Чизкейк Нью-Йорк</h2>
+                        <h5></h5>
+                        <p>Кусочек сливочного мягкого чизкейка, изготовленного из сыра Филадельфия на хрустящей песочной основе из печенья по оригинальной американской рецептуре</p>
+                        <div class="cardOrderNumber cheesecakeNY">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/cakes/cheesecakeNY.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/cheesecakeNuts.png" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Чизкейк Ореховый</h2>
+                        <h5></h5>
+                        <p>Сливочный чизкейк с кусочками хрустящего фундука и миндальными лепестками</p>
+                        <div class="cardOrderNumber cheesecakeNuts">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/cakes/cheesecakeNuts.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/cheesecakeRaspbery.png" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Чизкейк Малиновый</h2>
+                        <h5></h5>
+                        <p>Нежный чизкейк на основе сливочного сыра с белым шоколадом и малиновым джемом</p>
+                        <a href="#">Скоро в меню <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Донаты</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/donatsVanil.png" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Донат c ванильным кремом и шоколадом</h2>
+                        <h5></h5>
+                        <p>Пончик с начинкой из ванильного крема, покрытый глазурью из белого шоколада, украшенный шоколадными хлопьями</p>
+                        <div class="cardOrderNumber donatsVanil">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/cakes/croissantChocolate.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Круассаны</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/croissantChocolate.png" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Круассан с шоколадом</h2>
+                        <h5></h5>
+                        <p>Воздушный круассан с шоколадно-ореховой начинкой.                        </p>
+                        <div class="cardOrderNumber croissantChocolate">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/cakes/croissantChocolate.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="../img/bakery/croissantCheese.jpg" alt="Bakery">
+                    </div>
+                    <div class="cardText">
+                        <h2>Круассан с сыром</h2>
+                        <h5></h5>
+                        <p>Классический французский круассан с сырной начинкой и посыпкой из трав.</p>
+                        <div class="cardOrderNumber croissantCheese">
+                            <input type="number" min="0" max="20" value="0"/>
+                        </div>
+                        <a href="./products/cakes/croissantCheese.html">Узнать больше <i data-feather="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="wave"></div>
+<div id="goTopBtn"><i data-feather="arrow-up"></i></div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer_links">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="coffees.html">Продукция</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./aboutUs.html">О нас</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="./aboutUs.html">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="mini_contacts">
+            <a href="tel:+77782500648">+7 (778) 250 06 48</a>
+            <a href="mailto:alxanm02@gmail.com&cc=alxanm02@gmail.com">alxanm02@gmail.com</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
